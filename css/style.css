@@ -84,6 +84,9 @@ body {
   text-decoration: none;
   padding: 13px;
 }
+.btn:hover {
+  border-color: #6eed6e;
+}
 input:focus {
   outline: #6eed6e auto 5px;
 }
@@ -1141,6 +1144,7 @@ input:focus {
 .calculating-form__form {
   display: flex;
   align-items: flex-end;
+  text-align: center;
 }
 .calculating-form--bigger .calculating-form__form {
   flex-wrap: wrap;
