@@ -2,6 +2,10 @@
   padding-top: 65px;
   padding-bottom: 73px;
   border-bottom: 1px solid #2a2f31;
+  &--transparent {
+    padding-top: 35px;
+    padding-bottom: 82px;
+  }
 }
 .calculating-form .container {
   padding: 0;
@@ -36,12 +40,11 @@
   height: 36px;
   margin-right: 27px;
   padding-left: 15px;
-  &::-webkit-input-placeholder { color: #fff; font-size: 18px; font-weight: 300;}
-  &:-moz-placeholder           { color: #fff; font-size: 18px; font-weight: 300;}
-  &::-moz-placeholder          { color: #fff; font-size: 18px; font-weight: 300;}
-  &:-ms-input-placeholder      { color: #fff; font-size: 18px; font-weight: 300;}
+  &::-webkit-input-placeholder { color: #888a8b; font-size: 18px; font-weight: 300;}
+  &:-moz-placeholder           { color: #888a8b; font-size: 18px; font-weight: 300;}
+  &::-moz-placeholder          { color: #888a8b; font-size: 18px; font-weight: 300;}
+  &:-ms-input-placeholder      { color: #888a8b; font-size: 18px; font-weight: 300;}
   }
-
 .calculating-form__form input:nth-of-type(2) {
   background: transparent;
   color: #fff;
@@ -52,10 +55,21 @@
 }
 .calculating-form__form .btn {
   width: 100%;
+  max-width: 540px;
   color: #1a262d;
   text-align: center;
   background-color: #6eed6e;
   border: none;
   font-size: 22px;
   font-weight: 300;
+}
+.calculating-form--transparent .btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #888a8b;
+  height: 42px;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-top: 5px;
+  overflow: hidden;
 }
