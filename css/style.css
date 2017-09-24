@@ -69,6 +69,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'MuseoSansBolder';
+  src: url('../fonts/MuseoSansBolder.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 .btn {
   background: transparent;
   border: 1px solid #fff;
@@ -77,6 +83,14 @@ body {
   font-weight: 300;
   text-decoration: none;
   padding: 13px;
+}
+input:focus {
+  outline: #6eed6e auto 5px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .main-nav-wrapper {
   background-color: #1a262d;
@@ -106,6 +120,10 @@ body {
   text-transform: uppercase;
   font-size: 14px;
 }
+.main-nav li a:hover,
+.main-nav li a.active {
+  color: #6eed6e;
+}
 .main-slogan-wrapper {
   background-color: #10181d;
 }
@@ -117,6 +135,9 @@ body {
   padding-top: 33px;
   padding-bottom: 8px;
   justify-content: space-between;
+}
+.main-slogan--led {
+  padding-bottom: 11px;
 }
 .main-slogan__text {
   display: block;
@@ -144,6 +165,23 @@ body {
   position: relative;
   margin-right: -10px;
 }
+.main-slogan--led p {
+  width: 100%;
+}
+.main-slogan--led .main-slogan__title,
+.main-slogan--led .main-slogan__text {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main-slogan--led .main-slogan__title {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding-left: 40px;
+}
+.main-slogan--led .main-slogan__text {
+  padding-left: 38px;
+}
 .main-header__photo {
   min-height: 570px;
   background-image: url(../img/car-bg.jpg);
@@ -152,12 +190,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.main-header__photo--led {
+  min-height: 564px;
+  background-image: url(../img/car-bg-2.jpg);
+}
 .main-header__photo p {
   margin: 0;
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
   padding-left: 2px;
+}
+.main-header__photo--led p {
+  position: relative;
+  font-size: 24px;
+  color: #fff;
+  margin-left: -54px;
+  margin-top: 3px;
 }
 .main-header__photo span {
   display: block;
@@ -626,9 +675,214 @@ body {
   background-image: url(../img/index-sprite.svg);
   background-position: -480px 160px;
 }
+.special-offer {
+  position: relative;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #2a2f31;
+}
+.special-offer:after {
+  content: " ";
+  width: 1px;
+  height: 84%;
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 9%;
+  left: 53.2%;
+  margin-left: -0.5px;
+}
+.special-offer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 0;
+}
+.special-offer__form {
+  max-width: 560px;
+  position: relative;
+  z-index: 3;
+}
+.special-offer__form:after {
+  content: " ";
+  width: 444px;
+  height: 1px;
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 0;
+  left: 263px;
+}
+.special-offer__form input {
+  position: relative;
+  z-index: 10;
+}
+.special-offer__offer {
+  max-width: 470px;
+  padding-bottom: 46px;
+  position: relative;
+  z-index: 3;
+}
+.special-offer__offer:after {
+  content: " ";
+  width: 440px;
+  height: 1px;
+  background-color: #a5a5a5;
+  position: absolute;
+  bottom: 0;
+  right: 125px;
+}
+.special-offer__form .btn {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+}
+.special-offer h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 26px;
+}
+.special-offer__form h3 {
+  padding-right: 90px;
+  margin-bottom: 26px;
+}
+.special-offer__offer h3 {
+  margin-bottom: 18px;
+}
+.special-offer h3 span {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 900;
+  font-family: "MuseoSansMedium";
+}
+.special-offer__form__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28.2px;
+}
+.special-offer__form__top input {
+  background: transparent;
+  height: 45px;
+  border: 1px solid #fff;
+  width: 260px;
+}
+.special-offer__form__top label {
+  display: block;
+  margin-right: 30px;
+}
+.special-offer__form__top label:nth-of-type(2) {
+  margin-right: 0;
+}
+.special-offer__form__top span {
+  display: block;
+  font-size: 18px;
+  font-weight: 30;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.special-offer__offer__photo {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 59px;
+}
+.special-offer__offer__photo img {
+  margin: 0;
+}
+.promo-content {
+  padding-top: 48px;
+  position: relative;
+  padding-bottom: 47px;
+}
+.promo-content:after {
+  content: " ";
+  width: 1px;
+  height: 46%;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50.3%;
+  margin-left: -0.5px;
+}
+.promo-content__item {
+  margin-bottom: 6px;
+}
+.promo-content h4,
+.promo-content h5 {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+  clear: both;
+  padding-right: 52px;
+}
+.promo-content h5 {
+  position: relative;
+}
+.promo-content h5:after {
+  content: " ";
+  width: 115px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -23px;
+  left: 483px;
+}
+.promo-content__item--left:last-of-type h5::after {
+  display: none;
+}
+.promo-content__item--right h5 {
+  position: relative;
+}
+.promo-content__item--right h5:after {
+  content: " ";
+  width: 115px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -23px;
+  left: -17px;
+}
+.promo-content h3 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 67px;
+}
+.promo-content h4 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.promo-content h5 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+}
+.promo-content__item--right h4,
+.promo-content__item--right h5 {
+  float: right;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 65px;
+  padding-right: 0;
+}
 @media (max-width: 1725px) {
   .main-nav li {
     display: inline-block;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 1718px) {
+  .special-offer .container {
+    justify-content: center !important;
   }
 }
