@@ -111,6 +111,9 @@ input:focus {
 .main-nav--protective-membrane {
   padding-bottom: 26px;
 }
+.main-nav--powder-painting {
+  padding-bottom: 25px;
+}
 .main-nav li {
   display: inline-block;
   margin: 0 10px;
@@ -145,6 +148,10 @@ input:focus {
 .main-slogan--protective-membrane {
   padding-bottom: 15px;
 }
+.main-slogan--powder-painting {
+  padding-top: 35px;
+  padding-bottom: 11px;
+}
 .main-slogan__text {
   display: block;
 }
@@ -171,12 +178,23 @@ input:focus {
   position: relative;
   margin-right: -10px;
 }
-.main-slogan--led p {
+.main-slogan--led p,
+.main-slogan--powder-painting p {
   width: 100%;
 }
 .main-slogan--led .main-slogan__title,
-.main-slogan--led .main-slogan__text {
+.main-slogan--led .main-slogan__text,
+.main-slogan--powder-painting .main-slogan__title {
   font-size: 30px;
+  text-transform: uppercase;
+}
+.main-slogan--powder-painting .main-slogan__title {
+  margin-top: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.main-slogan--powder-painting .main-slogan__text {
+  font-size: 26px;
   text-transform: uppercase;
 }
 .main-slogan--led .main-slogan__title {
@@ -211,12 +229,20 @@ input:focus {
   min-height: 564px;
   background-image: url(../img/car-bg-3.jpg);
 }
+.main-header__photo--powder-painting {
+  padding-top: 43px;
+  background-image: url(../img/car-bg-4.jpg);
+  min-height: 554px;
+}
 .main-header__photo p {
   margin: 0;
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
   padding-left: 2px;
+}
+.main-header__photo--powder-painting p {
+  color: #fff;
 }
 .main-header__photo--led p {
   position: relative;
@@ -468,6 +494,41 @@ input:focus {
   background-position: -1279px -160px;
   left: 120px;
   top: 45px;
+}
+.advantages__card--claws::after {
+  background-image: url(../img/powder-painting-sprite.svg);
+  background-position: 22px 5px;
+  background-repeat: no-repeat;
+  left: 120px;
+  top: 45px;
+}
+.advantages__card--1car::after {
+  background-image: url(../img/powder-painting-sprite.svg);
+  background-position: -158px 25px;
+  background-repeat: no-repeat;
+  left: 130px;
+  top: 45px;
+}
+.advantages__card--wheel::after {
+  background-image: url(../img/powder-painting-sprite.svg);
+  background-position: -323px 15px;
+  background-repeat: no-repeat;
+  left: 120px;
+  top: 65px;
+}
+.advantages__card--squares::after {
+  background-image: url(../img/powder-painting-sprite.svg);
+  background-position: -460px 15px;
+  background-repeat: no-repeat;
+  left: 138px;
+  top: 75px;
+}
+.advantages__card--hand::after {
+  background-image: url(../img/powder-painting-sprite.svg);
+  background-position: -625px 15px;
+  background-repeat: no-repeat;
+  left: 148px;
+  top: 75px;
 }
 .advantages__card--deadline::after {
   content: " ";
@@ -755,6 +816,9 @@ input:focus {
   padding-bottom: 53px;
   border: none;
 }
+.special-offer--powder-painting {
+  padding-bottom: 46px;
+}
 .special-offer .container {
   display: flex;
   flex-wrap: wrap;
@@ -816,6 +880,9 @@ input:focus {
 .special-offer__form h3 {
   padding-right: 90px;
   margin-bottom: 26px;
+}
+.special-offer--powder-painting .special-offer__form h3 {
+  margin-bottom: 55px;
 }
 .special-offer__offer h3 {
   margin-bottom: 18px;
@@ -992,6 +1059,10 @@ input:focus {
   padding-top: 35px;
   padding-bottom: 82px;
 }
+.calculating-form--bigger {
+  padding-top: 30px;
+  padding-bottom: 84px;
+}
 .calculating-form .container {
   padding: 0;
 }
@@ -1013,7 +1084,10 @@ input:focus {
 }
 .calculating-form__form {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
+}
+.calculating-form--bigger .calculating-form__form {
+  flex-wrap: wrap;
 }
 .calculating-form__form input {
   background: transparent;
@@ -1022,7 +1096,7 @@ input:focus {
   border: 1px solid #fff;
   box-sizing: border-box;
   min-width: 256px;
-  height: 36px;
+  height: 36px !important;
   margin-right: 27px;
   padding-left: 15px;
 }
@@ -1054,6 +1128,10 @@ input:focus {
   height: 40px;
   margin-right: 43px;
 }
+.calculating-form--bigger .calculating-form__form .btn {
+  width: auto;
+  max-width: 266px;
+}
 .calculating-form__form .btn {
   width: 100%;
   max-width: 540px;
@@ -1068,7 +1146,7 @@ input:focus {
   background: transparent;
   border: 1px solid #fff;
   color: #888a8b;
-  height: 42px;
+  height: 36px;
   box-sizing: border-box;
   padding-top: 0;
   padding-top: 5px;
@@ -1081,6 +1159,10 @@ input:focus {
 }
 .feedback--protective-membrane {
   padding-bottom: 89px;
+}
+.feedback--powder-painting {
+  padding-top: 75px;
+  padding-bottom: 66px;
 }
 .feedback .container {
   position: relative;
@@ -1212,6 +1294,22 @@ input:focus {
 @media (max-width: 1718px) {
   .special-offer .container {
     justify-content: center !important;
+  }
+}
+@media (max-width: 1885px) {
+  .calculating-form--bigger .calculating-form__form .btn {
+    width: 100%;
+    max-width: 100000px;
+    margin-top: 20px;
+  }
+  .calculating-form--bigger .calculating-form__form input {
+    margin-bottom: 20px;
+  }
+  .calculating-form--bigger .calculating-form__form input:nth-child(3) {
+    margin-right: 0;
+  }
+  .calculating-form--bigger .calculating-form__form {
+    justify-content: space-between;
   }
 }
 @media (max-width: 1830px) {

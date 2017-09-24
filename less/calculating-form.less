@@ -6,6 +6,10 @@
     padding-top: 35px;
     padding-bottom: 82px;
   }
+  &--bigger {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
 }
 .calculating-form .container {
   padding: 0;
@@ -28,7 +32,10 @@
 }
 .calculating-form__form {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
+}
+.calculating-form--bigger .calculating-form__form {
+  flex-wrap: wrap;
 }
 .calculating-form__form input  {
   background: transparent;
@@ -37,7 +44,7 @@
   border: 1px solid #fff;
   box-sizing: border-box;
   min-width: 256px;
-  height: 36px;
+  height: 36px !important;
   margin-right: 27px;
   padding-left: 15px;
   &::-webkit-input-placeholder { color: #888a8b; font-size: 18px; font-weight: 300;}
@@ -53,6 +60,10 @@
   height: 40px;
   margin-right: 43px;
 }
+.calculating-form--bigger .calculating-form__form .btn {
+  width: auto;
+  max-width: 266px;
+}
 .calculating-form__form .btn {
   width: 100%;
   max-width: 540px;
@@ -67,9 +78,25 @@
   background: transparent;
   border: 1px solid #fff;
   color: #888a8b;
-  height: 42px;
+  height: 36px;
   box-sizing: border-box;
   padding-top: 0;
   padding-top: 5px;
   overflow: hidden;
+}
+@media (max-width:1885px) {
+  .calculating-form--bigger .calculating-form__form .btn {
+    width: 100%;
+    max-width: 100000px;
+    margin-top: 20px;
+  }
+  .calculating-form--bigger .calculating-form__form input {
+    margin-bottom: 20px;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  .calculating-form--bigger .calculating-form__form {
+    justify-content: space-between;
+  }
 }
