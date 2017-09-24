@@ -1,0 +1,35 @@
+.main-header__photo {
+  min-height: 570px;
+  background-image: url(../img/car-bg.jpg);
+  text-align: center;
+  padding-top: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-header__photo p {
+  margin: 0;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 2px;
+}
+.main-header__photo span {
+  display: block;
+  font-size: 38px;
+  line-height: 56px;
+  padding-left: 80px;
+}
+.main-header__photo__contacts {
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/index-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -356px 1px;
+    left: 33px;
+    top: 9px;
+  }
+}
