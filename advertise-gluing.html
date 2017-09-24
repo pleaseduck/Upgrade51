@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Рекламная оклейка</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-nav-wrapper">
+        <div class="container">
+          <ul class="main-nav  main-nav--powder-painting">
+            <li class="main-nav__item"><a href="#">Цветная оклейка</a></li>
+            <li class="main-nav__item"><a href="protective-membrane.html">Защитная пленка</a></li>
+            <li class="main-nav__item"><a href="#" class="active">Рекламная оклейка</a></li>
+            <li class="main-nav__item"><a href="#">Тонировка</a></li>
+            <li class="main-nav__item"><a href="#">Шумоизоляция</a></li>
+            <li class="main-nav__item"><a href="#">LED тюнинг</a></li>
+            <li class="main-nav__item"><a href="powder-painting.html">Порошковая окраска</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-slogan-wrapper">
+        <div class="container">
+          <div class="main-slogan  main-slogan--powder-painting  main-slogan--advertise-gluing">
+          <a href="index.html"><div class="main-logo  main-logo--tuning"></div></a>
+            <p>
+              <span class="main-slogan__title">
+                Рекламная оклейка высокопрочной пленкой
+              </span>
+              <span class="main-slogan__text">Сделай свой бренд ярче</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__photo  main-header__photo--advertise-gluing">
+        <div class="container">
+          <p>
+            Есть вопрос? Звоните - поможем!
+            <span class="main-header__photo__contacts">8-9646-801-801</span>
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="calculating-form  calculating-form--transparent  calculating-form--bigger  calculating-form--green-btn">
+      <div class="container">
+        <h3 class="calculating-form__title">
+          <span>Оставьте заявку прямо сейчас и получите расчет стоимости оклейки через 7 мин</span>
+        </h3>
+        <form class="calculating-form__form">
+          <input type="text" placeholder="Марка">
+          <input type="tel" placeholder="Модель">
+          <input type="text" placeholder="Количество машин">
+          <a href="#" class="btn">Получить расчет стоимости</a>
+        </form>
+      </div>
+    </div>
+    <div class="promo-content">
+    <div class="container">
+        <h3 class="promo-content__title">
+          Узнайте почему к нам
+          <span>Обращаются компании</span>
+        </h3>
+      <div class="promo-content__item  promo-content__item--left  clearfix">
+        <h4>Быстро</h4>
+        <h5>от 30 мин - время работы с одной машиной</h5>
+      </div>
+      <div class="promo-content__item  promo-content__item--right  clearfix">
+        <h4>Более 1000 видов пленки</h4>
+        <h5>Большой выбор качественной пленки</h5>
+      </div>
+      <div class="promo-content__item  promo-content__item--left  clearfix">
+        <h4>Уже делали такую же машину</h4>
+        <h5>за 4 года мы сделали уже более 2000 машин. Скорее всего уже делали и вашу</h5>
+      </div>
+      <div class="promo-content__item  promo-content__item--right  clearfix">
+        <h4>Бонусы и подарки</h4>
+        <h5>Разработана система поощрений постоянных клиентов</h5>
+      </div>
+    </div>
+    </div>
+    <script src="js/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema({
+      selector: '.siema',
+      duration: 200,
+      easing: 'ease-out',
+      perPage: 3,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: true,
+      threshold: 20,
+      loop: false,
+      onInit: () => {},
+      onChange: () => {},
+      });
+      document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+      document.querySelector('.next').addEventListener('click', () => mySiema.next());
+    </script>
+  </body>
+</html>

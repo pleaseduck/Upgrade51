@@ -10,6 +10,11 @@
     padding-top: 30px;
     padding-bottom: 84px;
   }
+  &--green-btn {
+    background-color: #232c32;
+    padding-top: 45px;
+    padding-bottom: 56px;
+  }
 }
 .calculating-form .container {
   padding: 0;
@@ -29,6 +34,9 @@
   font-size: 24px;
   font-weight: 700;
   text-shadow: 2px 0 4px rgba(255,255,255,0.3)
+}
+.calculating-form--green-btn .calculating-form__title span {
+  color: #6ee070;
 }
 .calculating-form__form {
   display: flex;
@@ -52,6 +60,20 @@
   &::-moz-placeholder          { color: #888a8b; font-size: 18px; font-weight: 300;}
   &:-ms-input-placeholder      { color: #888a8b; font-size: 18px; font-weight: 300;}
   }
+  .calculating-form--bigger .calculating-form__form input  {
+    background: transparent;
+    vertical-align: baseline;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    min-width: 256px;
+    height: 36px !important;
+    margin-right: 27px;
+    padding-left: 15px;
+    &::-webkit-input-placeholder { color: #fff; font-size: 18px; font-weight: 300;}
+    &:-moz-placeholder           { color: #fff; font-size: 18px; font-weight: 300;}
+    &::-moz-placeholder          { color: #fff; font-size: 18px; font-weight: 300;}
+    &:-ms-input-placeholder      { color: #fff; font-size: 18px; font-weight: 300;}
+    }
 .calculating-form__form input:nth-of-type(2) {
   background: transparent;
   color: #fff;
@@ -63,6 +85,7 @@
 .calculating-form--bigger .calculating-form__form .btn {
   width: auto;
   max-width: 266px;
+  color: #1a262d;
 }
 .calculating-form__form .btn {
   width: 100%;
@@ -83,6 +106,21 @@
   padding-top: 0;
   padding-top: 5px;
   overflow: hidden;
+}
+.calculating-form--green-btn .calculating-form__form input:nth-child(3) {
+    width: 45% !important;
+    max-width: auto !important;
+    margin-right: 0;
+}
+.calculating-form--green-btn .calculating-form__form .btn {
+  background-color: #6eed6e;
+  border: 0;
+  width: 100%;
+  max-width: 535px !important;
+  margin: 0 auto;
+    margin-top: 35px;
+   padding-top: 10px;
+    height: 42px;
 }
 @media (max-width:1885px) {
   .calculating-form--bigger .calculating-form__form .btn {
