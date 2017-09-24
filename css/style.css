@@ -271,6 +271,11 @@ input:focus {
 }
 .main-header__photo--protective-membrane p {
   color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.main-header__photo--protective-toning p {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .main-header__photo span {
   display: block;
@@ -490,22 +495,22 @@ input:focus {
 }
 .advantages__card--underline::after {
   background-position: -560px -155px;
-  left: 110px;
+  left: 120px;
   top: 40px;
 }
 .advantages__card--road::after {
   background-position: -760px -148px;
-  left: 110px;
+  left: 120px;
   top: 40px;
 }
 .advantages__card--like::after {
   background-position: -922px -157px;
-  left: 115px;
+  left: 110px;
   top: 45px;
 }
 .advantages__card--car::after {
   background-position: -1085px -147px;
-  left: 130px;
+  left: 120px;
   top: 45px;
 }
 .advantages__card--lamp::after {
@@ -524,7 +529,7 @@ input:focus {
   background-image: url(../img/powder-painting-sprite.svg);
   background-position: -158px 25px;
   background-repeat: no-repeat;
-  left: 130px;
+  left: 120px;
   top: 45px;
 }
 .advantages__card--wheel::after {
@@ -538,14 +543,14 @@ input:focus {
   background-image: url(../img/powder-painting-sprite.svg);
   background-position: -460px 15px;
   background-repeat: no-repeat;
-  left: 138px;
+  left: 120px;
   top: 75px;
 }
 .advantages__card--hand::after {
   background-image: url(../img/powder-painting-sprite.svg);
   background-position: -625px 15px;
   background-repeat: no-repeat;
-  left: 148px;
+  left: 120px;
   top: 75px;
 }
 .advantages__card--safety::after {
@@ -590,7 +595,7 @@ input:focus {
   width: 120px;
   height: 140px;
   background-position: -1710px 13px;
-  left: 130px;
+  left: 120px;
   top: 25px;
 }
 .advantages__card--quality::after {
@@ -599,7 +604,7 @@ input:focus {
   width: 120px;
   height: 140px;
   background-position: -940px 13px;
-  left: 130px;
+  left: 115px;
   top: 25px;
 }
 .advantages__card--service::after {
@@ -608,7 +613,7 @@ input:focus {
   width: 160px;
   height: 140px;
   background-position: -1290px 13px;
-  left: 110px;
+  left: 105px;
   top: 25px;
 }
 .advantages__card--material::after {
@@ -617,7 +622,7 @@ input:focus {
   width: 140px;
   height: 140px;
   background-position: -1113px 13px;
-  left: 135px;
+  left: 120px;
   top: 25px;
 }
 .advantages__card h3 {
