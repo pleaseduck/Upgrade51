@@ -182,6 +182,9 @@ input:focus {
 .main-slogan--powder-painting p {
   width: 100%;
 }
+.main-slogan--advertise-gluing .main-slogan__text {
+  text-transform: none !important;
+}
 .main-slogan--led .main-slogan__title,
 .main-slogan--led .main-slogan__text,
 .main-slogan--powder-painting .main-slogan__title {
@@ -617,6 +620,19 @@ input:focus {
 .advertising--tuning {
   padding-top: 119px;
 }
+.advertising--advertise-gluing {
+  padding-top: 62px;
+}
+.advertising--advertise-gluing:after {
+  content: " ";
+  width: 1px;
+  height: 88.5%;
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 5%;
+  left: 53.2%;
+  margin-left: -0.5px;
+}
 .advertising .container {
   display: flex;
   flex-wrap: wrap;
@@ -956,8 +972,20 @@ input:focus {
   height: 33%;
   top: 32.5%;
 }
+.promo-content--advertise-gluing {
+  padding-top: 40px;
+  border-bottom: 1px solid #2a2f31;
+  padding-bottom: 58px;
+}
+.promo-content--advertise-gluing::after {
+  height: 48.2%;
+  top: 47.5%;
+}
 .promo-content__item {
   margin-bottom: 6px;
+}
+.promo-content--advertise-gluing .promo-content__item {
+  margin-bottom: 0px;
 }
 .promo-content--protective-membrane .promo-content__item {
   margin-bottom: 1px;
@@ -1075,6 +1103,11 @@ input:focus {
   padding-top: 45px;
   padding-bottom: 56px;
 }
+.calculating-form--blue-bg {
+  padding-top: 60px;
+  background-color: #1a262d;
+  padding-bottom: 40px;
+}
 .calculating-form .container {
   padding: 0;
 }
@@ -1087,6 +1120,11 @@ input:focus {
   text-align: center;
   margin-bottom: 36px;
 }
+.calculating-form--blue-bg .calculating-form__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 72px;
+}
 .calculating-form .calculating-form__title span {
   display: block;
   margin-top: 10px;
@@ -1096,6 +1134,9 @@ input:focus {
 }
 .calculating-form--green-btn .calculating-form__title span {
   color: #6ee070;
+}
+.calculating-form--blue-bg .calculating-form__form {
+  align-items: baseline;
 }
 .calculating-form__form {
   display: flex;
@@ -1176,7 +1217,14 @@ input:focus {
 .calculating-form--bigger .calculating-form__form .btn {
   width: auto;
   max-width: 266px;
+  color: #c2c3c3;
+}
+.calculating-form--blue-bg .calculating-form__form .btn {
+  height: 50px;
+  border: none;
+  background-color: #6eed6e;
   color: #1a262d;
+  padding-top: 10px;
 }
 .calculating-form__form .btn {
   width: 100%;
@@ -1212,6 +1260,7 @@ input:focus {
   margin-top: 35px;
   padding-top: 10px;
   height: 42px;
+  color: #1a262d;
 }
 .feedback {
   padding-top: 60px;
@@ -1225,8 +1274,16 @@ input:focus {
   padding-top: 75px;
   padding-bottom: 66px;
 }
+.feedback--advertise-gluing {
+  padding-top: 40px;
+  padding-bottom: 75px;
+  border: none;
+}
 .feedback .container {
   position: relative;
+}
+.feedback--advertise-gluing .feedback__title {
+  margin-bottom: 80px;
 }
 .feedback__title {
   text-align: center;

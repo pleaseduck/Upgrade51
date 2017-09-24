@@ -15,6 +15,11 @@
     padding-top: 45px;
     padding-bottom: 56px;
   }
+  &--blue-bg {
+    padding-top: 60px;
+    background-color: #1a262d;
+    padding-bottom: 40px;
+  }
 }
 .calculating-form .container {
   padding: 0;
@@ -28,6 +33,11 @@
   text-align: center;
   margin-bottom: 36px;
 }
+.calculating-form--blue-bg .calculating-form__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 72px;
+}
 .calculating-form .calculating-form__title span {
   display: block;
   margin-top: 10px;
@@ -37,6 +47,9 @@
 }
 .calculating-form--green-btn .calculating-form__title span {
   color: #6ee070;
+}
+.calculating-form--blue-bg .calculating-form__form {
+align-items: baseline;
 }
 .calculating-form__form {
   display: flex;
@@ -85,7 +98,14 @@
 .calculating-form--bigger .calculating-form__form .btn {
   width: auto;
   max-width: 266px;
+  color: #c2c3c3;
+}
+.calculating-form--blue-bg .calculating-form__form .btn {
+  height: 50px;
+  border: none;
+  background-color: #6eed6e;
   color: #1a262d;
+  padding-top: 10px;
 }
 .calculating-form__form .btn {
   width: 100%;
@@ -121,6 +141,7 @@
     margin-top: 35px;
    padding-top: 10px;
     height: 42px;
+    color: #1a262d;
 }
 @media (max-width:1885px) {
   .calculating-form--bigger .calculating-form__form .btn {
