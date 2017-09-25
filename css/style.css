@@ -117,6 +117,9 @@ input:focus {
 .main-nav--powder-painting {
   padding-bottom: 25px;
 }
+.main-nav--noise {
+  padding-bottom: 26px;
+}
 .main-nav li {
   display: inline-block;
   margin: 0 10px;
@@ -155,6 +158,9 @@ input:focus {
   padding-top: 35px;
   padding-bottom: 15px;
 }
+.main-slogan--noise {
+  padding-bottom: 16px;
+}
 .main-slogan__text {
   display: block;
 }
@@ -182,8 +188,12 @@ input:focus {
   margin-right: -10px;
 }
 .main-slogan--led p,
-.main-slogan--powder-painting p {
+.main-slogan--powder-painting p,
+.main-slogan--noise p {
   width: 100%;
+}
+.main-slogan--noise p span {
+  text-transform: uppercase;
 }
 .main-slogan--advertise-gluing .main-slogan__text {
   text-transform: none !important;
@@ -249,6 +259,10 @@ input:focus {
   background-image: url(../img/car-bg-6.jpg);
   min-height: 552px;
 }
+.main-header__photo--noise {
+  background-image: url(../img/car-bg-7.jpg);
+  min-height: 565px;
+}
 .main-header__photo p {
   margin: 0;
   display: inline-block;
@@ -258,7 +272,8 @@ input:focus {
 }
 .main-header__photo--powder-painting p,
 .main-header__photo--advertise-gluing p,
-.main-header__photo--toning p {
+.main-header__photo--toning p,
+.main-header__photo--noise p {
   color: #fff;
   text-shadow: 0 0 5px black;
 }
@@ -897,11 +912,31 @@ input:focus {
 .special-offer--powder-painting {
   padding-bottom: 46px;
 }
+.special-offer--reverse {
+  padding-bottom: 53px;
+}
+.special-offer--reverse:after {
+  content: " ";
+  width: 1px;
+  height: 84%;
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 9%;
+  left: 47% !important;
+  margin-left: -0.5px;
+}
 .special-offer .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 50px;
+  padding-left: 0;
+}
+.special-offer--reverse .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 34px;
   padding-left: 0;
 }
 .special-offer--protective-membrane .container {
@@ -920,6 +955,30 @@ input:focus {
   position: absolute;
   top: 0;
   left: 263px;
+}
+.special-offer--reverse .special-offer__form::before {
+  content: " ";
+  width: 444px;
+  height: 1px;
+  background-color: #a5a5a5;
+  position: absolute;
+  bottom: 0;
+  right: 263px;
+}
+.special-offer--reverse .special-offer__form::after {
+  display: none;
+}
+.special-offer--reverse .special-offer__offer::after {
+  content: " ";
+  width: 444px;
+  height: 1px;
+  background-color: #a5a5a5;
+  position: absolute;
+  top: 0;
+  left: 148px;
+}
+.special-offer--reverse .special-offer__offer span {
+  margin-left: 10px;
 }
 .special-offer__form input {
   position: relative;

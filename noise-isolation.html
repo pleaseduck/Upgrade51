@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Шумоизоляция</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-nav-wrapper">
+        <div class="container">
+          <ul class="main-nav  main-nav--noise">
+            <li class="main-nav__item"><a href="#">Цветная оклейка</a></li>
+            <li class="main-nav__item"><a href="protective-membrane.html">Защитная пленка</a></li>
+            <li class="main-nav__item"><a href="advertise-gluing.html">Рекламная оклейка</a></li>
+            <li class="main-nav__item"><a href="toning.html">Тонировка</a></li>
+            <li class="main-nav__item"><a href="#" class="active">Шумоизоляция</a></li>
+            <li class="main-nav__item"><a href="led-tuning.html">LED тюнинг</a></li>
+            <li class="main-nav__item"><a href="powder-painting.html">Порошковая окраска</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-slogan-wrapper">
+        <div class="container">
+          <div class="main-slogan  main-slogan--protective-membrane  main-slogan--noise">
+            <div class="main-logo"></div>
+            <p>
+              <span class="main-slogan__title">
+                Профессиональная шумоизоляция автомобиля
+              </span>
+              <span class="main-slogan__text">Мы знаем как сделать автомобиль тише и комфортнее</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__photo  main-header__photo--noise">
+        <div class="container">
+          <p>
+            Есть вопрос? Звоните - поможем!
+            <span class="main-header__photo__contacts">8-9646-801-801</span>
+          </p>
+        </div>
+      </div>
+      <div class="special-offer  special-offer--reverse">
+        <div class="container">
+          <div class="special-offer__offer">
+            <h3>Закажите 4 зоны шумоизоляции и сделаем капот<span>бесплатно<span></h3>
+            <div class="special-offer__offer__photo">
+              <img src="img/membrane.jpg">
+              <img src="img/handle.jpg">
+            </div>
+          </div>
+          <form class="special-offer__form">
+            <h3>Заказать расчет шумоизоляции и сделать машину тише</h3>
+          <div class="special-offer__form__top">
+              <label>
+              <span>Ваше имя:</span>
+              <input type="text">
+            </label>
+            <label>
+              <span>Номер телефона:</span>
+              <input type="tel">
+            </label>
+          </div>
+          <input type="submit" value="Оставить заявку" class="btn">
+          </form>
+        </div>
+      </div>
+    </header>
+    <script src="js/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema({
+      selector: '.siema',
+      duration: 200,
+      easing: 'ease-out',
+      perPage: 3,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: true,
+      threshold: 20,
+      loop: false,
+      onInit: () => {},
+      onChange: () => {},
+      });
+      document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+      document.querySelector('.next').addEventListener('click', () => mySiema.next());
+    </script>
+  </body>
+</html>
