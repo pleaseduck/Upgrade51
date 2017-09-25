@@ -24,6 +24,10 @@
     padding-top: 45px;
     padding-bottom: 76px;
   }
+  &--noise {
+    padding-top: 36px;
+    padding-bottom: 68px;
+  }
 }
 .calculating-form .container {
   padding: 0;
@@ -42,6 +46,9 @@
   font-weight: 500;
   margin-bottom: 72px;
 }
+.calculating-form--noise .calculating-form__title {
+  margin-bottom: 44px;
+}
 .calculating-form .calculating-form__title span {
   display: block;
   margin-top: 10px;
@@ -55,13 +62,17 @@
 .calculating-form--blue-bg .calculating-form__form {
 align-items: baseline;
 }
-.calculating-form--toning-2 .calculating-form__form {
+.calculating-form--toning-2 .calculating-form__form{
   align-items: baseline;
 }
 .calculating-form__form {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
     text-align: center;
+}
+.calculating-form--noise .calculating-form__form,
+.calculating-form--led-tuning .calculating-form__form {
+  align-items: baseline;
 }
 .calculating-form--bigger .calculating-form__form {
   flex-wrap: wrap;
@@ -163,6 +174,14 @@ align-items: baseline;
    padding-top: 10px;
     height: 42px;
     color: #1a262d;
+}
+.calculating-form--noise .btn {
+  border: none;
+    background-color: #6eed6e;
+  height: 50px;
+  color: #1a262d !important;
+  padding: 0 13px;
+  padding: 10px;
 }
 @media (max-width:1885px) {
   .calculating-form--bigger .calculating-form__form .btn {

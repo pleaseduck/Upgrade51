@@ -1,5 +1,9 @@
 .advantages {
   background-image: url(../img/blue-bg.jpg);
+  &--noise {
+    padding-bottom: 70px;
+    background-image: url(../img/blue-bg-2.jpg);
+  }
 }
 .advantages .container {
   display: flex;
@@ -67,6 +71,50 @@
     &::after {
         background-position: -1279px -160px;
         left: 120px;
+        top: 45px;
+    }
+  }
+}
+.advantages-card--noise {
+  &::after {
+      background-image: url(../img/noise-sprite.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 120px;
+      top: 45px;
+  }
+  &--music {
+    &::after {
+        background-position: 5px 8px;
+        left: 120px;
+        top: 45px;
+    }
+  }
+  &--noise {
+    &::after {
+        background-position: -150px 8px;
+        left: 130px;
+        top: 45px;
+    }
+  }
+  &--warm {
+    &::after {
+        background-position: -295px 8px;
+        left: 130px;
+        top: 45px;
+    }
+  }
+  &--home {
+    &::after {
+        background-position: -472px 15px;
+        left: 130px;
+        top: 45px;
+    }
+  }
+  &--silence {
+    &::after {
+        background-position: -640px 15px;
+        left: 130px;
         top: 45px;
     }
   }
@@ -193,8 +241,17 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+.advantages--noise h2 {
+  margin-bottom: 62px;
+}
+.advantages--noise  .advantages__card {
+  margin-bottom: 10px;
+}
 .advantages--toning .advantages__card p {
   font-size: 18px !important;
+}
+.advantages--noise .advantages__card p {
+  font-size: 24px;
 }
 .advantages__card p {
   font-size: 16px;
