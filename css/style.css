@@ -997,7 +997,6 @@ input:hover {
   background-image: url(../img/woman-bg.jpg);
   background-size: cover;
   padding-bottom: 35px;
-  margin-bottom: 847px;
 }
 .special-offer .container {
   display: flex;
@@ -1819,6 +1818,44 @@ input:hover {
   margin-left: -10px;
   position: absolute;
   z-index: 3;
+}
+.work-technology {
+  padding-bottom: 107px;
+}
+.work-technology--color-gluing {
+  padding-bottom: 87px;
+}
+.work-technology--color-gluing .work-technology__title {
+  margin-top: 75px;
+}
+.work-technology__title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .work-technology__item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  max-width: 320px;
+}
+.work-technology__picture {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url(../img/work.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
 }
 @media (max-width: 1725px) {
   .main-nav li {
